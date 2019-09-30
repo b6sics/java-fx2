@@ -1,0 +1,27 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2019.09.27., 17:36:17
+    Author     : t1
+*/
+
+.root {
+    -fx-background-image: url("background.jpg");
+}
+
+.button {
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-background-color: linear-gradient(#61a2b1, #2a5058);
+}
+
+.button:hover {
+    -fx-background-color: linear-gradient(#2a5058, #61a2b1);
+}
+
+#btnTorol {
+    -fx-text-fill: orange;
+}
