@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" spacing="10.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pkg03_todo.FXMLDocumentController">
+   <children>
+      <VBox spacing="10.0">
+         <children>
+            <TextField fx:id="txtUjFeladat" prefWidth="400.0" />
+            <ListView fx:id="lstFeladatok" onKeyPressed="#bill" prefHeight="300.0" prefWidth="400.0" />
+         </children>
+      </VBox>
+      <VBox prefWidth="100.0" spacing="10.0">
+         <children>
+            <Button defaultButton="true" mnemonicParsing="false" onAction="#hozzaad" prefWidth="100.0" text="Hozzáad" />
+            <Button mnemonicParsing="false" onAction="#modosit" prefWidth="100.0" text="Módosít" />
+            <Button mnemonicParsing="false" onAction="#torol" prefWidth="100.0" text="Töröl" />
+            <Separator prefWidth="100.0" />
+            <Button mnemonicParsing="false" onAction="#elejere" prefWidth="100.0" text="Elejére" />
+            <Button mnemonicParsing="false" onAction="#fel" prefWidth="100.0" text="Fel" />
+            <Button mnemonicParsing="false" onAction="#le" prefWidth="100.0" text="Le" />
+            <Button mnemonicParsing="false" onAction="#vegere" prefWidth="100.0" text="Végére" />
+            <Separator prefWidth="200.0" />
+            <Button cancelButton="true" mnemonicParsing="false" onAction="#kilep" prefWidth="100.0" text="Kilép" />
+         </children>
+      </VBox>
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</HBox>
