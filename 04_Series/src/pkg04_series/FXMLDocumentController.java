@@ -141,7 +141,7 @@ public class FXMLDocumentController implements Initializable {
     }
 
     private void ment() {
-        try (PrintWriter ki = new PrintWriter("Sorozatok", "utf8")) {
+        try (PrintWriter ki = new PrintWriter("sorozatok.txt", "utf8")) {
             tblSorozatok.getItems().forEach((f) -> {
                 ki.println(f);
             });
